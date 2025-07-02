@@ -211,11 +211,11 @@
       </div>
       <div>
         <strong>Status:</strong>
-        <p>Out for Final Delivery</p>
+        <p>In Transit</p>
       </div>
       <div>
         <strong>Current Location:</strong>
-        <p>Texas Tx</p>
+        <p>Texas Highway 83</p>
       </div>
       <div>
         <strong>Destination:</strong>
@@ -224,7 +224,7 @@
     </div>
 
     <div class="progress-bar">
-      <div class="progress-fill" style="width: 10%"></div>
+      <div class="progress-fill" style="width: 30%"></div>
     </div>
 
     <div class="timeline" id="timeline"></div>
@@ -238,14 +238,14 @@
           model: 'RX350',
           year: 2022
         },
-        status: 'Out for Final Delivery',
-        currentLocation: 'Texas Highway 61',
+        status: 'In Transit',
+        currentLocation: 'Texas Highway 83',
         destination: '1000 Parkview Drive Lumberton NC 28358, United States',
         updates: [
           { date: '--------', status: 'Vehicle Received', location: 'North Carolina Export Lot' },
           { date: '--------', status: 'Customs Cleared', location: 'North Carolina Customs Office' },
           { date: '--------', status: 'Arrived in North Carolina', location: 'North Carolina' },
-          { date: '--------', status: 'In Transit', location: 'Texas Highway 83' },
+          { date: '2025-07-02', status: 'In Transit', location: 'Texas Highway 83' },
           { date: '2025-07-01', status: 'Out for Final Delivery', location: 'Texas Tx' }
         ]
       }
@@ -257,7 +257,7 @@
       let itemClass = '';
       let iconHTML = '<i class="fas fa-dot-circle"></i>';
 
-      if (update.status === 'Out for Final Delivery') {
+      if (update.status === 'In Transit') {
         itemClass = 'highlight';
         iconHTML = '<i class="fas fa-map-marker-alt"></i>';
       } else if (index >= 0) {
